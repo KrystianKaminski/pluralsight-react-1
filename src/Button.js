@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Button = (props) => (
-    <button>{props.label}</button>
-)
-
+class Button extends React.Component {
+    render() {
+        return (
+            <button>42</button>
+        )
+    }
+}
 
 export default Button
