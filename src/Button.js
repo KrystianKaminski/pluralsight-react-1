@@ -5,8 +5,8 @@ class Button extends React.Component {
     render() {
         return (
             <button
-                onClick={this.props.onClickFunction}
-            >+1
+                onClick={() => this.props.onClickFunction(this.props.incrementValue)}
+            >+{this.props.incrementValue}
             </button>
         )
     }

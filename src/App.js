@@ -9,15 +9,28 @@ class App extends Component {
     counter: 0
   }
 
-  incrementCounter = () => {
+  incrementCounter = (incrementValue) => {
     this.setState({
-      counter: this.state.counter + 1
+      counter: this.state.counter + incrementValue
     })
   }
   render() {
     return (
       <div>
         <Button
+          incrementValue={1}
+          onClickFunction={this.incrementCounter}
+        />
+        <Button
+          incrementValue={5}
+          onClickFunction={this.incrementCounter}
+        />
+        <Button
+          incrementValue={10}
+          onClickFunction={this.incrementCounter}
+        />
+        <Button
+          incrementValue={100}
           onClickFunction={this.incrementCounter}
         />
         <Result
