@@ -5,7 +5,9 @@ import Button from './Button'
 class App extends Component {
   render() {
     return (
-      <Button />
+      <Button
+        label="Do"
+      />
     );
   }
 }

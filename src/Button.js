@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Button = (props) => (
-    <button>Go</button>
+    <button>{props.label}</button>
 )
 
 
