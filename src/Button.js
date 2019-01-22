@@ -2,9 +2,13 @@ import React from 'react'
 
 class Button extends React.Component {
 
+    state = {
+        counter: 0
+    }
+
     render() {
         return (
-            <button>42</button>
+            <button>{this.state.counter}</button>
         )
     }
 }
